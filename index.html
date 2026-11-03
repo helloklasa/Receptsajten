@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enkelt recept på pannkakor | Lexicon - Test och kartläggning</title>
+    <title>Enkelt recept på pannkakor | Receptsajten</title>
     <meta
       name="description"
-      content=""
-      Traditionellt
-      enkelt
-      pannkaksrecept
-      med
-      steg-för-steg-instruktioner.
+      content="Traditionellt enkelt pannkaksrecept med steg-för-steg-instruktioner."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <img src="images/pancake1.jpg" class="recipe-hero" alt="Pannkakor med blåbär och banan" />
+      <img
+        src="images/pancake1.jpg"
+        class="recipe-hero"
+        width="1920"
+        height="1280"
+        alt="Pannkakor med blåbär och banan"
+      />
       <article class="recipe">
         <header>
           <h1>Enkelt recept på pannkakor</h1>
@@ -27,38 +28,93 @@
           </p>
         </header>
 
-        <h2>Ingredienser</h2>
-        <p>För 4 portioner</p>
-        <ul>
-          <li>2 1/2 dl vetemjöl</li>
-          <li>1/2 tsk salt</li>
-          <li>6 dl mjölk</li>
-          <li>3 ägg</li>
-          <li>smör (till stekning)</li>
-          <li>sylt, bär eller frukt till servering</li>
-        </ul>
+        <section aria-labelledby="ingredients-heading">
+          <h2 id="ingredients-heading">Ingredienser</h2>
+          <p>För 4 portioner</p>
+          <ul class="ingredient-list" role="list">
+            <li>
+              <label>
+                <input type="checkbox" />
+                2 1/2 dl vetemjöl
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                1/2 tsk salt
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                6 dl mjölk
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                3 ägg
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                smör (till stekning)
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                sylt, bär eller frukt till servering
+              </label>
+            </li>
+          </ul>
+        </section>
 
-        <h2>Så här gör du</h2>
-        <ol>
-          <li>Blanda mjöl och salt i en bunke.</li>
-          <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
-          <li>Vispa i resten av mjölken och äggen.</li>
-          <li>Låt smeten vila i ca 10 minuter.</li>
-          <li>
-            Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek-
-            eller pannkakspanna.
-          </li>
-          <li>Servera med sylt, bär eller frukt.</li>
-        </ol>
-        <h2>Serveringsförslag</h2>
-        <div class="recipe-gallery">
-            <img src="images/pancake2.jpg" alt="Staplade pannkakor" loading="lazy">
-            <img src="images/pancake3.jpg" alt="Pannkakor med banan och sirap" loading="lazy">
-        </div>
+        <section aria-labelledby="instructions-heading">
+          <h2 id="instructions-heading">Så här gör du</h2>
+          <ol>
+            <li>Blanda mjöl och salt i en bunke.</li>
+            <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
+            <li>Vispa i resten av mjölken och äggen.</li>
+            <li>Låt smeten vila i ca 10 minuter.</li>
+            <li>
+              Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek-
+              eller pannkakspanna.
+            </li>
+            <li>Servera med sylt, bär eller frukt.</li>
+          </ol>
+        </section>
+
+        <section aria-labelledby="serving-suggestions-heading">
+          <h2 id="serving-suggestions-heading">Serveringsförslag</h2>
+          <div class="recipe-gallery">
+            <figure>
+              <img
+                src="images/pancake2.jpg"
+                width="1920"
+                height="1480"
+                alt="Staplade pannkakor sett från sidan"
+                loading="lazy"
+              />
+              <figcaption>Med sirap och florsocker</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="images/pancake3.jpg"
+                width="1920"
+                height="1280"
+                alt="Staplade pannkakor sett uppifrån"
+                loading="lazy"
+              />
+              <figcaption>Med banan och sirap</figcaption>
+            </figure>
+          </div>
+        </section>
       </article>
     </main>
     <footer>
-        Bilder från Unsplash: Nikldn, Anna Zaro, Eiliv Aceron.
+      <p>Bilder från Unsplash: Nikldn, Anna Zaro, Eiliv Aceron.</p>
     </footer>
   </body>
 </html>
