@@ -1,73 +1,96 @@
 :root {
-    --color-bg: #DCACAC;
-    --color-main: #FFFFFF;
-    --color-text: #000000;
-    --color-heading: #A10000;
-    --color-info-bg: #EBEBEB;
+  --color-bg: #dcacac;
+  --color-main: #ffffff;
+  --color-text: #000000;
+  --color-heading: #a10000;
+  --color-info-bg: #ebebeb;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
-    margin: 0;
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    font-family: sans-serif;
-    line-height: 1.6;
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: sans-serif;
+  line-height: 1.6;
 }
 
 main {
-    max-width: 70rem;
-    margin-inline: auto;
-    background-color: var(--color-main);
+  max-width: 70rem;
+  margin-inline: auto;
+  background-color: var(--color-main);
 }
 
 h1 {
-    color: var(--color-heading);
-    text-wrap: balance;
+  color: var(--color-heading);
+  text-wrap: balance;
 }
 
 .recipe-hero {
-    width: 100%;
+  width: 100%;
 }
 
 .recipe-info {
-    padding: 1rem;
-    background-color: var(--color-info-bg);
+  padding: 1rem;
+  background-color: var(--color-info-bg);
 }
 
 .recipe {
-    padding: clamp(1rem, 4vw, 2rem);
+  padding: clamp(1rem, 4vw, 2rem);
 
-    & li {
-        line-height: 2;
-    }
+  li {
+    line-height: 2;
+  }
+}
+
+.ingredient-list {
+  padding: 0;
+  list-style: none;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+  }
+
+  input {
+    flex-shrink: 0;
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
+    accent-color: var(--color-heading);
+  }
 }
 
 .recipe-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+  gap: 1rem;
 
-    & img {
-        width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-    }
+  img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  figure {
+    margin: 0;
+  }
 }
 
 footer {
-    padding: 1rem;
-    text-align: center;
-    color: var(--color-heading);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
