@@ -37,10 +37,6 @@ h1 {
   text-wrap: balance;
 }
 
-.recipe-hero {
-  width: 100%;
-}
-
 .recipe-info {
   padding: 1rem;
   background-color: var(--color-info-bg);
